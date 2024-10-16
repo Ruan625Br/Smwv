@@ -1,0 +1,119 @@
+site_name: Smwv
+site_url: https://ruan625br.github.io/Smwv
+site_author: Juan Nascimento (Ruan625br)
+site_description: >-
+  Smww embeds WebView into sa-mp clients, allowing you to create interfaces with react, vue, etc.
+  
+
+# Repository
+repo_name: Smwv
+repo_url: https://github.com/ruan625br/Smwv
+edit_uri: "tree/main/docs/"
+remote_branch: gh-pages
+
+# Copyright
+copyright: Copyright &copy;  2024 Juan Nascimento
+
+# Page tree
+
+nav:
+  - Getting started:
+      - Overview: index.md
+      - Installation: getting-started/installation.md
+      - Quick start:
+          - Client: getting-started/quick-start/client.md
+          - Server: getting-started/quick-start/server.md
+          - Web: getting-started/quick-start/web.md
+      - License: getting-started/license.md
+      - Contributing: getting-started/contributing.md
+
+
+# Configuration
+theme:
+  name: 'material'
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search
+
+# Customization
+extra:
+  social:
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
